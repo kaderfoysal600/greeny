@@ -1,0 +1,338 @@
+<div class="container">
+  <div class="header-top">
+    <span>20% Discount All New Customers <a href="">GET REGISTER</a></span>
+    <button class="header-top-button"><mat-icon>close</mat-icon></button>
+  </div>
+  <div class="all-section">
+    <div class="header-container" (scroll)="onScroll()" [ngClass]="navBarFixed?'fixed':'noFixed'">
+      <div class="header" (scroll)="onScroll()" [ngClass]="navBarFixed?'removePadding':'noFixed'">
+        <div class="logo">
+          <img src="../../assets/image/logo.png" alt="" />
+        </div>
+        <div class="profile">
+          <img src="../../assets/image/user.png" alt="" />
+          <span>Join</span>
+        </div>
+        <div class="search-bar" (click)="clickEvent()"  [ngClass]="status ? 'success' : 'danger'"  (scroll)="onScroll()" [ngClass]="navBarFixed?'addBorder':'noFixed'">
+          <input matInput placeholder="Search anything" />
+          <mat-icon>search</mat-icon>
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <fa-icon [icon]="faShuffle"></fa-icon>
+            <sup>0</sup>
+          </div>
+          <div class="icon">
+            <fa-icon [icon]="faHeart"></fa-icon>
+            <sup>0</sup>
+          </div>
+          <div class="icon">
+            <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            <sup>9+</sup>
+          </div>
+          <div class="total-price">
+            <span>TOTAL PRICE</span>
+            <small>$345.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-contant" (scroll)="onScroll()" [ngClass]="navBarFixed?'hide':'open'">
+        <ul class="navbar-list">
+          <li>
+            <div class="li-title">
+              <a href="">Home</a>
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">Home grid</a>
+              <a href="#">Home Index</a>
+              <a href="#">Home Classic</a>
+              <a href="#">Home Standred</a>
+              <a href="#">Home Classic</a>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Shop</a>
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Pages</a>
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Authentic</a>
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Blogs</a>
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Need Help</a>
+            </div>
+          </li>
+          <li>
+            <div class="li-title">
+              <a href="">Contact Us</a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar-select-group">
+          <div class="navbar-select">
+            <fa-icon [icon]="faFlag"></fa-icon>
+            <span>English</span>
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </div>
+          <div class="navbar-select">
+            <fa-icon [icon]="faFilterCircleDollar"></fa-icon>
+            <span>Doller</span>
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-2">
+    <div class="sidebar">
+      <div class="sidebar-title">
+        <mat-icon>menu</mat-icon>
+        <span>TOP CATEGORIES</span>
+      </div>
+      <div class="sidebar-body">
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Vegetables</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            <span>Groceries</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faAppleWhole"></fa-icon>
+            <span>Fruits</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Dairy Firms</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Sea Foods</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Diet Foods</span>
+          </div>
+
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Dry Foods</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Fast Foods</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Drinks</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Meats</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="sidebar-body-elm">
+          <div class="sidebar-bodyelm-name">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <span>Fishes</span>
+          </div>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <swiper
+        class="banner-wrap"
+        [slidesPerView]="1"
+        [spaceBetween]="10"
+        (swiper)="onSwiper($event)"
+        (slideChange)="onSlideChange()"
+        [navigation]="true"
+        [pagination]="{ clickable: true }"
+        [scrollbar]="{ draggable: true }"
+      >
+        <ng-template swiperSlide>
+          <div class="banner-container">
+            <div class="banner-left">
+              <h1>We Are Delivered Organic food within 24 hours.</h1>
+              <button>
+                <fa-icon [icon]="faShoppingBasket"></fa-icon> Shop Now
+              </button>
+            </div>
+            <div class="banner-right">
+              <img src="../../assets/image/01.png" alt="" />
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="banner-container">
+            <div class="banner-left">
+              <h1>We Are Delivered Organic food within 24 hours.</h1>
+              <button>
+                <fa-icon [icon]="faShoppingBasket"></fa-icon> Shop Now
+              </button>
+            </div>
+            <div class="banner-right">
+              <img src="../../assets/image/02.png" alt="" />
+            </div></div
+        ></ng-template>
+        <ng-template swiperSlide>
+          <div class="banner-container">
+            <div class="banner-left">
+              <h1>We Are Delivered Organic food within 24 hours.</h1>
+              <button>
+                <fa-icon [icon]="faShoppingBasket"></fa-icon> Shop Now
+              </button>
+            </div>
+            <div class="banner-right">
+              <img src="../../assets/image/03.png" alt="" />
+            </div></div
+        ></ng-template>
+        <ng-template swiperSlide>
+          <div class="banner-container">
+            <div class="banner-left">
+              <h1>We Are Delivered Organic food within 24 hours.</h1>
+              <button>
+                <fa-icon [icon]="faShoppingBasket"></fa-icon> Shop Now
+              </button>
+            </div>
+            <div class="banner-right">
+              <img src="../../assets/image/02 (1).png" alt="" />
+            </div></div
+        ></ng-template>
+      </swiper>
+      <div class="banner-bottom-elm-1">
+        <img src="../../assets/image/04.jpg" alt="" />
+      </div>
+      <div class="banner-bottom-elm-2">
+        <img src="../../assets/image/05.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="section-3">
+    <div class="support-container">
+      <div class="support-icon">
+        <fa-icon [icon]="faTruck"></fa-icon>
+      </div>
+      <div class="support-text">
+        <h3>Free Home Delivery</h3>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+      </div>
+    </div>
+    <div class="support-container">
+      <div class="support-icon">
+        <fa-icon [icon]="faArrowsRotate"></fa-icon>
+      </div>
+      <div class="support-text">
+        <h3>Instant Return Policy</h3>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+      </div>
+    </div>
+    <div class="support-container">
+      <div class="support-icon">
+        <fa-icon [icon]="faHeadset"></fa-icon>
+      </div>
+      <div class="support-text">
+        <h3>Quick Support System</h3>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+      </div>
+    </div>
+    <div class="support-container">
+      <div class="support-icon">
+        <fa-icon [icon]="faLock"></fa-icon>
+      </div>
+      <div class="support-text">
+        <h3>Secure Payment Way</h3>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-4">
+    <h1>Best Deals On Items</h1>
+    <div class="time-container-1">
+      <div class="time-container">
+        <div class="show-time">
+          <span>{{ Day }}</span>
+          <small>Days</small>
+        </div>
+        <div class="gap">
+          <span>:</span>
+        </div>
+        <div class="show-time">
+          <span>{{ Hours }}</span>
+          <small>Hours</small>
+        </div>
+        <div class="gap">
+          <span>:</span>
+        </div>
+        <div class="show-time">
+          <span>{{ Minutes }}</span>
+          <small>Minutes</small>
+        </div>
+        <div class="gap">
+          <span>:</span>
+        </div>
+        <div class="show-time">
+          <span>{{ now }}</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-5">
+    <app-products></app-products>
+    <button><fa-icon [icon]="faEye"></fa-icon>VIEW ALL DETAILS</button>
+  </div>
+  <div class="section-6">
+    <h1>Our Featured Items</h1>
+    <app-organic></app-organic>
+  </div>
+</div>

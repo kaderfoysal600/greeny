@@ -1,0 +1,26 @@
+<div class="products-container">
+    <div class="product" *ngFor="let product of organicProducts$">
+        <div class="top">
+            <img src="http://localhost:3000/{{product.avatar}}" alt="">
+            <div class="icons">
+              <div class="icon">
+                <fa-icon [icon]="faShuffle"></fa-icon>
+              </div>
+              <div class="icon">
+                <fa-icon [icon]="faPlay"></fa-icon>
+              </div>
+              <div class="icon">
+                <fa-icon [icon]="faEye"></fa-icon>
+              </div>
+            </div>
+        </div>
+      <div class="product-description">
+        <h4>{{ product.name }}</h4>
+        <div class="product-price">
+          <span class="currPrice">${{ product.currPrice }}/piece</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vero totam</p>
+        <button class="product-button"><fa-icon [icon]="faShoppingBasket"></fa-icon>Add</button>
+      </div>
+      </div>
+  </div>

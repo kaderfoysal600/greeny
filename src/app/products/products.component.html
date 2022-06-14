@@ -1,0 +1,21 @@
+<div class="products-container">
+  <div class="product" *ngFor="let product of people$">
+    <img src="http://localhost:3000/{{product.avatar}}" alt="">
+    <div class="icons">
+      <div class="icon">
+        <fa-icon [icon]="faShuffle"></fa-icon>
+      </div>
+      <div class="icon">
+        <fa-icon [icon]="faPlay"></fa-icon>
+      </div>
+      <div class="icon">
+        <fa-icon [icon]="faEye"></fa-icon>
+      </div>
+    </div>
+    <h4>{{ product.name }}</h4>
+    <div class="product-price">
+      <span class="prevPrice">${{ product.prevPrice }}</span><span class="currPrice">${{ product.currPrice }}/</span>
+    </div>
+    <button class="product-button"><fa-icon [icon]="faShoppingBasket"></fa-icon>Add</button>
+  </div>
+</div>

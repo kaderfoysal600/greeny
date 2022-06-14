@@ -1,0 +1,122 @@
+
+.products-container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  .top > img {
+    width: 190px;
+
+  }
+  
+  .product {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+  }
+  .product-description{
+    text-align: left;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+  .product-description {
+    border-left: 1px solid gray;
+    box-sizing: border-box;
+  }
+  .product-description > h4 {
+    font-size: 1rem;
+    color: #39404a;
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+  }
+  .product-description > p {
+    font-size: 0.9rem;
+    color: #6b6b6b;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+  }
+  
+  // .product-price{
+  //   display: flex;
+  //   gap: 5px;
+  //   justify-content: center;
+  // }
+  .prevPrice {
+    color: #ff3838;
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .currPrice {
+    color: #119744;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+.product-description > button {
+    width: 100%;
+    border: none;
+    padding: 0.6rem 0rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #39404a;
+    box-sizing: border-box;
+  }
+.product-description > button fa-icon {
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+  .icon {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #119744;
+    color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .product:hover {
+    border: 1px solid #119744;
+    box-sizing: border-box;
+    transition: 0.3s ease-in;
+  }
+  .icons {
+    visibility: hidden;
+    position: absolute;
+    bottom: 17%;
+    left: 10%;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  .product:hover .icons {
+    transform: translateY(-50%);
+    transition: 0.3s ease-in;
+    visibility: visible;
+  }
+  
+//   .product:hover .product-button {
+//     background-color: #119744;
+//     color: #ffffff;
+//   }
+  
+  @media (max-width: 980px) {
+    .products-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  
